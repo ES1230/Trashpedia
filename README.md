@@ -2,6 +2,8 @@
 ### 💻 프로젝트 소개
 - 사이트명 : TRASHPEDIA
 - 에코 정보제공 커뮤니티 플랫폼
+![screencapture-localhost-8085-trashpedia-2024-03-11-19_07_40](https://github.com/ES1230/ES1230.github.io/assets/153258776/eea916a3-3530-4727-ae3c-c3b7d0157569)
+
 
 
 ### 📕 프로젝트 목적
