@@ -26,3 +26,5 @@
 - Backend :  Springboot
 - DataBase : Oracle
 
+![Trashpedia_main](https://github.com/ES1230/MangoBoard-React/assets/153258776/0c9bbb9c-9da2-4ff7-90c5-c288b9f79c7e)
+
