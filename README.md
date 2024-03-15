@@ -1,4 +1,7 @@
+
 ![trashpediaMAin](https://github.com/ES1230/ES1230.github.io/assets/153258776/9065af08-63ac-4304-8dcc-09bfa2d790c3)
+
+#
 
 ### 💻 프로젝트 소개
 - 사이트명 : TRASHPEDIA
@@ -32,4 +35,6 @@
 ![Trashpedia_main](https://github.com/ES1230/MangoBoard-React/assets/153258776/0c9bbb9c-9da2-4ff7-90c5-c288b9f79c7e)
 
 
+### ERD
+![Copy of 똑똑쓰 ERD](https://github.com/ES1230/ODIGAJI_TeamProject/assets/153258776/cedb745c-367c-4a97-a2c9-844f0155783d)
 
