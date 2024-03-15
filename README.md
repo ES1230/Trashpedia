@@ -3,7 +3,7 @@
 
 #
 
-### 💻 프로젝트 소개
+###  📄 프로젝트 소개
 - 사이트명 : TRASHPEDIA
 - 에코 정보제공 커뮤니티 플랫폼
 
@@ -23,18 +23,21 @@
 - 관리자페이지(회원관리/게시글관리/쓰레기관리/신고관리)
 - 기타(Spring Security, 파일삭제 스케쥴러)
 
-### ⚙ 개발환경
+### 💻 개발환경
 
 - Frontend : HTML, JavaScript, CSS, JQuery, JSP
 - Backend : Springboot, JDK17
 - DataBase : Oracle
 - 버전관리 : Git, Github
 
+### ⚙ ERD
+![Copy of 똑똑쓰 ERD](https://github.com/ES1230/ODIGAJI_TeamProject/assets/153258776/cedb745c-367c-4a97-a2c9-844f0155783d)
+
+
+
 #
 
+
+
 ![Trashpedia_main](https://github.com/ES1230/MangoBoard-React/assets/153258776/0c9bbb9c-9da2-4ff7-90c5-c288b9f79c7e)
-
-
-### ERD
-![Copy of 똑똑쓰 ERD](https://github.com/ES1230/ODIGAJI_TeamProject/assets/153258776/cedb745c-367c-4a97-a2c9-844f0155783d)
 
