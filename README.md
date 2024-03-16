@@ -1,6 +1,8 @@
 
 ![trashpediaMAin](https://github.com/ES1230/ES1230.github.io/assets/153258776/9065af08-63ac-4304-8dcc-09bfa2d790c3)
 
+![실천서약LIST](https://github.com/ES1230/MangoBoard-React/assets/153258776/9c77043d-f39f-44a6-8637-ab6cf5aa38b6)
+
 
 #
 
