@@ -32,6 +32,7 @@
 - Backend : Springboot, JDK17
 - DataBase : Oracle
 - 버전관리 : Git, Github
+- 협업툴 : Figma, ERDCloud, Slack
 
 ### ⚙ ERD
 ![Copy of 똑똑쓰 ERD](https://github.com/ES1230/ODIGAJI_TeamProject/assets/153258776/cedb745c-367c-4a97-a2c9-844f0155783d)
