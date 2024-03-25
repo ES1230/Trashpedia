@@ -11,7 +11,8 @@
 
 ### 📕 프로젝트 목적
   
-#### ☞ 올바르게 쓰레기 버리는 방법을 제공하고, 커뮤니티와 실천 참여를 유도해 폐기물 발생을 최소화하여 환경에 미치는 영향을 최소화하는 것을 목표로 함
+####  올바르게 쓰레기 버리는 방법을 제공하고, 커뮤니티와 실천 참여를 유도해 폐기물 발생을 최소화하여 
+####  환경에 미치는 영향을 최소화하는 것을 목표로 함
 
   
  ▶ 사이트 주요기능
@@ -36,13 +37,14 @@
 ![Copy of 똑똑쓰 ERD](https://github.com/ES1230/ODIGAJI_TeamProject/assets/153258776/cedb745c-367c-4a97-a2c9-844f0155783d)
 
 
-
-
 #### ▶ 메인페이지 구현영상
 
 ![Trashpedia_main](https://github.com/ES1230/MangoBoard-React/assets/153258776/0c9bbb9c-9da2-4ff7-90c5-c288b9f79c7e)
 
 
+# 
+   
+    
 ![실천서약LIST](https://github.com/ES1230/MangoBoard-React/assets/153258776/9c77043d-f39f-44a6-8637-ab6cf5aa38b6)
 
 
