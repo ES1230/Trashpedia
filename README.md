@@ -45,9 +45,3 @@
 
 # 
 
-
-#         
-    
-![실천서약LIST](https://github.com/ES1230/MangoBoard-React/assets/153258776/9c77043d-f39f-44a6-8637-ab6cf5aa38b6)
-
-
