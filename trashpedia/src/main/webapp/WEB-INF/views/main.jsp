@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="<%=request.getContextPath() %>"/>
 <!DOCTYPE html>
@@ -13,7 +12,6 @@
 <link rel="stylesheet" href="${contextPath}/resources/css/main/main.css">
 <!-- slick 라이브러리 CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<!-- slick 라이브러리 테마 CSS (선택사항) -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 <!-- slick 라이브러리 JS -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -27,14 +25,10 @@
 			<h2 class="scroll_on type_bottom">TRASHPEDIA</h2>
 			<h4 class="scroll_on type_bottom">잘 버리는 일부터 시작하세요</h4>
 			<h4 class="scroll_on type_bottom">모두를 위한 정보 플랫폼</h4>
-			<!-- <h4> 누구나 쉽게 따라할 수 있는 친환경 라이프스타일을 전파합니다.</h4> -->
 			<button id="scrollDownButton">
 				<span class="material-symbols-outlined">arrow_downward</span>
 			</button>
 		</div>
-		<!-- <img src="https://i.pinimg.com/736x/96/44/ba/9644bae369e627aef2bdd6ac4d621d65.jpg"> -->
-		<!-- <img src="https://i.pinimg.com/564x/ed/fb/7c/edfb7c8f1d339e93605a0c50c0c8c6db.jpg"> -->
-		<!-- <img src="https://www.10wallpaper.com/wallpaper/1366x768/1608/Green_leaves_macro-2016_High_Quality_Wallpaper_1366x768.jpg"> -->
 	</div>
 
 	<main>
@@ -114,7 +108,6 @@
 			</div>
 			<div id="pledge-slider" class="recently-garbage-outer">
 				<p id="pledge-slider-p"> 아래 실천하고 있는 자원순환 서약 이미지를 클릭한 다음 서명에 동참해주세요! </p>
-
 				<div class="recently-garbage-inner">
 					<c:choose>
 						<c:when test="${not empty pledgeCList}">
@@ -135,12 +128,10 @@
 						</c:otherwise>
 					</c:choose>
 				</div>
-				
 				<div class="mainMoreA">
 					<a href="${contextPath}/pledge/list?bigCategoryNo=2&subCategoryNo=5">더보기</a>
 				</div>
 			</div>
-
 		</div>
 
 		<div class="showEvent">
@@ -149,19 +140,15 @@
 				<p id="contentP2">함께하는 자원순환의 첫 걸음</p>
 				<p id="contentP3"> Go Green with <span>TRESHPEDIA</span> </p>
 			</div>
-	
 			<!-- 배경이미지 -->
 			<img class="green-img" src="<c:url value='/resources/image/main/mainImg/greenBackImg.jpg' />" alt="Green Background Image">
 			
 			<!-- 공지사항 / 실천서약 -->
 			<div id="popularPost">
-	
 				<div id="popularPostBack">
 					<section class="backSection"></section>
 				</div>
-	
 				<div class="posts-container">
-	
 					<!-- 왼쪽: 공지게시글-->
 					<div id="noticePostsDiv">
 						<span class="post-title">공지사항</span> 
@@ -172,7 +159,6 @@
 							</a>
 						</div>
 					</div>
-	
 					<!-- 오른쪽: 실천인증 게시글 리스트 -->
 					<div id="instagramPostsDiv">
 						<span class="post-title">자원순환 실천인증</span> <span class="more-btn">
@@ -201,7 +187,6 @@
 							</c:choose>
 						</div>
 					</div>
-	
 				</div>
 			</div>
 		</div>
@@ -213,7 +198,6 @@
 	</button>
 
 	<jsp:include page="common/footer.jsp" />
-
 
 	<script>
 		// IntersectionObserver 설정
@@ -324,7 +308,6 @@
 		  }
 		});
 	    
-	    
 	    // 메인 이미지 스크롤 효과
 	    $(document).ready(function() {
 	        const $counters = $(".scroll_on");
@@ -366,7 +349,6 @@
 	    function pledgeDetail(postNo) {
 	    	location.href = "${contextPath}/pledge/detail/" + postNo;
     	}
-	    
     </script>
 
 </body>
