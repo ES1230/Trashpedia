@@ -33,17 +33,14 @@
 
 	<main>
 
-		<div id="mainVisual" class="showEvent">
-		</div>
+		<div id="mainVisual" class="showEvent"></div>
 
 		<div class="recently-outer showEvent">
 			<img style="width:100%"src="<c:url value='/resources/image/main/mainImg/main_visual.png' />">
 			
+			<!-- 최근 업데이트된 쓰레기 사전  -->
 			<div id="recently-garbage-slider" class="recently-garbage-outer">
-				<p id="recently-garbage-outer-title">
-					최근 업데이트된 <strong>쓰레기사전</strong>
-				</p>
-
+				<p id="recently-garbage-outer-title"> 최근 업데이트된 <strong>쓰레기사전</strong> </p>
 				<div class="recently-garbage-inner">
 					<c:choose>
 						<c:when test="${not empty recentlyTrashList}">
@@ -67,6 +64,7 @@
 					</c:choose>
 				</div>
 			</div>
+			
 		</div>
 
 		<!-- 정보자료글-홍보교육자료 -->
@@ -74,7 +72,6 @@
 			<a class="information-outer-title" href=""><strong>홍보교육자료</strong>
 				<img src="<c:url value='/resources/image/main/mainImg/common-arrow-anchor.png'/>">
 			</a> 
-
 			<div id="information-content-slider" >
 				<c:choose>
 					<c:when test="${not empty informationList}">
@@ -149,6 +146,7 @@
 					<section class="backSection"></section>
 				</div>
 				<div class="posts-container">
+				
 					<!-- 왼쪽: 공지게시글-->
 					<div id="noticePostsDiv">
 						<span class="post-title">공지사항</span> 
@@ -187,6 +185,7 @@
 							</c:choose>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -217,6 +216,7 @@
 		  });
 		});
 	
+		// 화면 내릴 때 "showEvent" 클래스 가진 요소 하나씩 나타나기 이벤트
 		$('.showEvent').each(function() {
 			observer.observe(this);
 		});
@@ -349,6 +349,7 @@
 	    function pledgeDetail(postNo) {
 	    	location.href = "${contextPath}/pledge/detail/" + postNo;
     	}
+	    
     </script>
 
 </body>

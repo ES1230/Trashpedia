@@ -57,16 +57,13 @@
                         </button> 
                     </div>
                 </div>
-                
                 <!-- 게시글 내용 -->
 				<div class="pledge">
 				    <div class="content-outer" id="boardContentOuter"> </div>
 				    <div class="content-outer" id="noPostMessage"><h1>해당하는 게시글이 없습니다.</h1></div>
 				</div>
-
 				<!-- 페이징바  -->
 				<div class="board-pageBar paging-button"></div>
-
 			</div>
             <!-- 게시글등록 -->
 			<c:if test="${not empty authentication}">
@@ -181,7 +178,7 @@
 	        });
 	    }
 	    
-	    // 게시글 반복문돌리기
+	    // 게시글 반복문 돌리기
 	    function updateBoardTable(data) {
 		    let userList = document.querySelector('.content-outer');
 		    userList.innerHTML = '';
@@ -210,7 +207,7 @@
 		        imgElement.src = '${contextPath}/resources/attachFile/image/' + post.changeName;
 		        imgElement.className = 'content-img';
 		
-		     	// .ico-clone 생성
+		     	// 이미지 위 icon 생성
 		        let icoClone = document.createElement('span');
 		        icoClone.className = 'ico-clone';
 		        

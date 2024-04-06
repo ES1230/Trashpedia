@@ -153,7 +153,7 @@
 		                })
 		                ul.appendChild(li);
 		            });
-		            search.innerHTML = ''; // Clear the existing content
+		            search.innerHTML = '';
 		            search.appendChild(ul);
 		        }
 		    };

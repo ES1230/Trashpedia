@@ -104,16 +104,6 @@
 							</tr>
 						</tbody>
 					</table>
-					<!-- 페이징 -->
-<!-- 					<div class="paging-button"> -->
-<!-- 						<button class="pagingBtn" id="prevBtn"><</button> -->
-<!-- 						<button class="pagingBtn">1</button> -->
-<!-- 						<button class="pagingBtn">2</button> -->
-<!-- 						<button class="pagingBtn">3</button> -->
-<!-- 						<button class="pagingBtn">4</button> -->
-<!-- 						<button class="pagingBtn">5</button> -->
-<!-- 						<button class="pagingBtn" id="nextBtn">></button> -->
-<!-- 					</div> -->
 				</div>
 			</div>
 		</div>
@@ -127,6 +117,7 @@
 		const loginUserNo = `${authentication.userNo}`;
 		const writeUser = `${post.userName}`;
 	
+		// toast viewer
 		const editor = toastui.Editor.factory({
             el : document.querySelector(".toast-custom-viewer"),
             viewer:true,
