@@ -103,7 +103,7 @@ main .backgroundImg img{
     flex-wrap: wrap;
     box-sizing: border-box;
     cursor: pointer;
-    max-width: 1150px; /* 최대 너비 지정 (원하는 최대 너비로 수정) */
+    max-width: 1150px;
     margin: 0 auto;
     padding-bottom: 15px;
 }
@@ -416,9 +416,7 @@ main .green-img {
 }
 
 /* 오른쪽: 인스타 게시글 리스트 스타일 */
-#instagramPostsDiv {
-    width: 55%;
-}
+#instagramPostsDiv { width: 55%; }
 
 .instagram-posts-list {
     display: flex;
@@ -487,7 +485,6 @@ main .green-img {
 }
 
 .instagram-posts-list .post-container:hover .post-overlay { opacity: 1; }
-
 .instagram-posts-list .post-container .post-overlay p {
     margin: 14px;
     font-size: 14px;
@@ -499,7 +496,6 @@ main .green-img {
     -webkit-box-orient: vertical;
     white-space: pre-line;
 }
-
 
 /* 스크롤 업버튼 */
 #scrollUpButton{
@@ -519,7 +515,6 @@ main .green-img {
 }
 
 
-
 /* ------------- 헤더 메인페이지 스타일 적용 ------------- */
 
 header{
@@ -531,10 +526,6 @@ header .header-nav li a{
     color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
 }
-/* .header-nav .header-menu-ul>li>a{
-	color: inherit !important;
-    font-weight: 600;
-} */
 
 header .header-nav li a:hover{
     color: #6eb76e !important;
