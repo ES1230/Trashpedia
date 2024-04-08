@@ -43,9 +43,6 @@
 							download="${attachment.originName}">${attachment.originName}</a>
 						</span>
 					</c:if>
-					
-					
-					
 				</div>
 			</div>
 
@@ -112,8 +109,7 @@
 				
 				<!-- 서약자  -->
 				<div class="reply-outer-top-area">
-					<span class="reply_title"> 동참 서약 내용 보기 </span> | <span class="reply_count"
-						id="rcount">0</span>
+					<span class="reply_title"> 동참 서약 내용 보기 </span> | <span class="reply_count" id="rcount">0</span>
 				</div>
 				<div class="reply-outer-content-area">
 					<table class="reply-table" id="replyArea">
@@ -158,14 +154,12 @@
  	   
  	  //실천서약 동참
  	  function insertSignature() {
- 		  
  		  	var agreePrivacyCheckbox = document.getElementById("agreePrivacy");
  		    var nameInput = document.getElementById("name");
  		    var phoneNumberInput = document.getElementById("phoneNumber");
  		   	var pledgeNo = `${post.postNo}`;
  		   
  		    if(loginUser){
- 		    	
 	 		   	// 이름, 핸드폰 번호 입력 여부 확인
 	 	        var name = nameInput.value.trim();
         		var phone = phoneNumberInput.value.trim();
@@ -180,15 +174,13 @@
 	 	           	phoneNumberInput.focus();
 	 	            return;
 	 	        }
- 		    	
 	 	    	// 개인정보 수집 이용에 대한 동의 체크 여부 확인
 	 		    if (!agreePrivacyCheckbox.checked) {
 	 		        alert("개인정보 수집 이용에 대한 동의가 필요합니다.");
 	 		        return;
 	 		    }
- 		    	
 	 		   $.ajax({
-	 	            url: "${contextPath}/pledge/insertSignature",  // 실제 서버 엔드포인트로 변경
+	 	            url: "${contextPath}/pledge/insertSignature",
 	 	            method: "POST",
 	 	            data: {
 	 	                userNo: loginUserNo,

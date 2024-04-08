@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="<%=request.getContextPath()%>" />
 <!DOCTYPE html>
@@ -198,7 +197,7 @@
 		    if (content.length > MAX_LENGTH) {
 		        // 이벤트 핸들러 일시 해제 
 		        editor.off('change', handleChange);
-	
+
 		      	alert(`최대 2,000,000자까지 입력 가능합니다.`);
 		        editor.setMarkdown(content.substring(0, MAX_LENGTH));
 	
@@ -208,7 +207,6 @@
 		}
 		// 이벤트 핸들러 등록
 		editor.on('change', handleChange);
-    
 		
 	</script>
 </body>

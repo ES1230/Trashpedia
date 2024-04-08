@@ -133,7 +133,6 @@ public class PledgeServiceImpl implements PledgeService{
         } else {
             return 3; // 동일하지 않으면 3 
         }
-        
 	}
 	
 	// 게시글 내 실천서약조회

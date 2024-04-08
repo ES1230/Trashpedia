@@ -27,19 +27,20 @@
 					<p>쓰레기 백과사전</p>
 				</div>
 				<div class="encyContent1">
-						<form method="get" action="${contextPath}/trash/allList">
+				<form method="get" action="${contextPath}/trash/allList">
 			        <div class="ency-search-area">
 			            <input type="search" name="keyword" class="search-input" placeholder="검색어를 입력하세요" autocomplete="off">
 			            <button type="submit" class="search-button" aria-label="Search">search</button>
 			        </div>
 		        </form>
+		        	<!-- 인기태그 -->
 					<div class="content-tab">
 						<ul class="temp-tab" style="float: left; list-style: none; position: relative; width: 1150px;" aria-hidden="false">
 							<c:forEach var="post" items="${popularList}">
 					            <li><a onclick="trashDetail(${post.trashNo})" href="#" data-cont="thumb">${post.trashTitle}</a></li>
 							</c:forEach>
-            </ul>
-          </div>
+            			</ul>
+          			</div>
 				</div>
 			</div>
 		</div>

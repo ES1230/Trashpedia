@@ -46,7 +46,6 @@ public class TrashController {
 	@GetMapping("/list")
 	public ModelAndView showEncyclopediaPage() {
 		ModelAndView modelAndView = new ModelAndView();
-		//모든쓰레기 조회
 		
 		//최근 업데이트된 쓰레기
 		List<TrashPost> trashList = service.getRecentlyTrashList(); 

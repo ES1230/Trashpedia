@@ -117,7 +117,6 @@ public class CommonController {
 	@ResponseBody
 	@GetMapping("/image/{filename}")
 	public UrlResource showImage(@PathVariable String filename) throws MalformedURLException {
-		
 		UrlResource url = new UrlResource("file:" + fileStore.getFullPath2(filename));
 	    return url;
 	}

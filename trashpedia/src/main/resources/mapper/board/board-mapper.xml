@@ -89,7 +89,7 @@
 		WHERE POST_NO = #{postNo}
 	</update>
 	
-		<!-- 게시글 상세조회 - 이미지 -->
+	<!-- 게시글 상세조회 - 이미지 -->
 	<select id="getImageUrl" parameterType="map" resultType="imgAttachment">
 		SELECT *
 		FROM IMG_ATTACHMENT IA
@@ -124,13 +124,10 @@
 	
 	<!-- 카테고리 가지고오기 -->
 	<select id="getSubCategory" parameterType="subCategory" resultType='subCategory'>
-		SELECT SUB_CATEGORY_NO, S.BIG_CATEGORY_NO,
-		SUB_CATEGORY_NAME, BIG_CATEGORY_NAME
+		SELECT SUB_CATEGORY_NO, S.BIG_CATEGORY_NO, SUB_CATEGORY_NAME, BIG_CATEGORY_NAME
 		FROM SUB_CATEGORY S
-		JOIN
-		BIG_CATEGORY B ON S.BIG_CATEGORY_NO = B.BIG_CATEGORY_NO
-		WHERE
-		S.SUB_CATEGORY_NO = #{subCategoryNo}
+		JOIN BIG_CATEGORY B ON S.BIG_CATEGORY_NO = B.BIG_CATEGORY_NO
+		WHERE S.SUB_CATEGORY_NO = #{subCategoryNo}
 	</select>
 
 	<!-- 게시글 등록(POST) -->
@@ -139,8 +136,7 @@
 			SELECT SEQ_POSTNO.NEXTVAL FROM DUAL
 		</selectKey>
 		INSERT INTO POST
-		VALUES (#{postNo}, #{title}, #{content}, SYSDATE,
-		SYSDATE, 'Y')
+		VALUES (#{postNo}, #{title}, #{content}, SYSDATE, SYSDATE, 'Y')
 	</insert>
 
 	<!-- 게시글 등록(BOARD) -->
@@ -148,48 +144,37 @@
 		<selectKey keyProperty="boardNo" resultType="int" order="BEFORE">
 			SELECT SEQ_BNO.NEXTVAL FROM DUAL
 		</selectKey>
-		INSERT INTO BOARD
-		VALUES (#{boardNo}, #{postNo}, #{userNo},
-		#{subCategoryNo},
-		'Y')
+		INSERT INTO BOARD VALUES (#{boardNo}, #{postNo}, #{userNo}, #{subCategoryNo},'Y')
 	</insert>
 
 	<!-- 첨부파일등록 -->
 	<insert id="insertAttachment">
 		INSERT INTO ATTACHMENT
-		VALUES
-		(SEQ_ATTNO.NEXTVAL,#{refBno},#{originName},#{changeName},#{fileType},SYSDATE,SYSDATE,'Y')
+		VALUES (SEQ_ATTNO.NEXTVAL,#{refBno},#{originName},#{changeName},#{fileType},SYSDATE,SYSDATE,'Y')
 	</insert>
 
 	<!-- 이미지등록 -->
 	<insert id="insertImgAttachment">
 		INSERT INTO IMG_ATTACHMENT
-		VALUES (SEQ_IATTNO.NEXTVAL,
-		#{refBno},#{originName},#{changeName},1,#{imgType},SYSDATE,SYSDATE,'Y')
+		VALUES (SEQ_IATTNO.NEXTVAL, #{refBno},#{originName},#{changeName},1,#{imgType},SYSDATE,SYSDATE,'Y')
 	</insert>
 
 	<!-- 게시글 수정 - 기존글조회 -->
 	<select id="getPost" parameterType="int" resultType="post">
-		SELECT
-		P.POST_NO, P.TITLE, P.CONTENT, P.CREATE_DATE, P.MODIFY_DATE,
-		B.USER_NO,B.BOARD_NO, USER_NAME
+		SELECT P.POST_NO, P.TITLE, P.CONTENT, P.CREATE_DATE, P.MODIFY_DATE,B.USER_NO,B.BOARD_NO, USER_NAME
 		FROM POST P
-		LEFT JOIN BOARD B ON
-		P.POST_NO = B.POST_NO
+		LEFT JOIN BOARD B ON P.POST_NO = B.POST_NO
 		LEFT JOIN MEMBER M ON M.USER_NO = B.USER_NO
-		WHERE
-		P.POST_NO = #{postNo}
+		WHERE P.POST_NO = #{postNo}
 	</select>
 
 	<!-- 게시글 수정 -->
 	<update id="updatePost" parameterType="post">
 		UPDATE POST
-		SET TITLE =
-		#{title},
-		CONTENT = #{content},
-		MODIFY_DATE = SYSDATE
-		WHERE POST_NO =
-		#{postNo}
+		SET TITLE = #{title},
+			CONTENT = #{content},
+			MODIFY_DATE = SYSDATE
+		WHERE POST_NO = #{postNo}
 	</update>
 
 	<!--첨부파일삭제 -->
@@ -304,7 +289,7 @@
 		WHERE BOARD_NO = #{boardNo} AND USER_IP = '${userIp}' AND TRUNC(CREATE_DATE) = TRUNC(SYSDATE)
 	</select>
 
-<!-- 	게시글 조회수 증가 -->
+	<!-- 게시글 조회수 증가 -->
 	<insert id="increaseCount" parameterType="hits">
 		INSERT INTO HITS
 		VALUES(SEQ_HITNO.NEXTVAL, #{boardNo}, #{userIp}, SYSDATE) 

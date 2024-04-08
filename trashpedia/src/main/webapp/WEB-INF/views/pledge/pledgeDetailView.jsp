@@ -146,8 +146,8 @@
     		            comments += "<td><p>" + comment.content + "</p>";
     		            if('${authentication.userName}' == comment.userName){
 	    		            comments += "<div class='comment-buttons'>" +
-	    		                        "<button onclick='showCommentUpdateForm("+comment.commentNo+",this)' class='btn-edit'> 수정 </button>" +
-	    		                        "<button onclick='deleteComment(" + comment.commentNo + ")' class='btn-delete'> 삭제 </button>" +
+	    		                        "<button onclick='showCommentUpdateForm("+comment.commentNo+",this)' class='btn-edit'>수정</button>" +
+	    		                        "<button onclick='deleteComment(" + comment.commentNo + ")' class='btn-delete'>삭제</button>" +
 	    		                        "</div></td>";
     		            }
     		            comments += "<td>" + comment.createDate + "</td>";

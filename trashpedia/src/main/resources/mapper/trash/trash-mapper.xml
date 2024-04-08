@@ -31,11 +31,10 @@
 		        WHERE T.STATUS='Y' AND IM.IMG_TYPE = 2
 		        GROUP BY T.TRASH_NO, TSC.SUB_CATEGORY_NAME, IM.CHANGE_NAME
 		        ORDER BY TRASH_HITS DESC        
-		    )
+		    	)
 		    WHERE ROWNUM BETWEEN 1 AND 7
 		    ) 
 		LEFT JOIN TRASH_POST TPO  ON TPO.TRASH_POST_NO = TRASH_NO
-		
 	</select>
 	
 	<!-- 비슷한 쓰레기  -->
