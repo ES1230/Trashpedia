@@ -6,7 +6,7 @@
 
 
 ###  📄 프로젝트 소개
-- 사이트명 : TRASHPEDIA(Trash+Encyclopedia의 합성어)
+- 사이트명 : TRASHPEDIA (Trash + Encyclopedia의 합성어)
 - 에코 정보제공 커뮤니티 플랫폼
 
 ### 📕 프로젝트 목적
