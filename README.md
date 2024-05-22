@@ -6,7 +6,7 @@
 
 
 ###  📄 프로젝트 소개
-- Spring Boot를 기반으로 한 RESTful 웹서비스 프로젝트
+- Spring Boot를 기반으로 한 RESTful 웹프로젝트
 - 사이트명 : TRASHPEDIA (Trash + Encyclopedia의 합성어)
 - 에코 정보제공 커뮤니티 플랫폼
 
